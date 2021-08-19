@@ -1,0 +1,119 @@
+// Header
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 30px;
+
+  &__logout {
+    background-color: $color-primary;
+    border: 0;
+    color: $color-white-1;
+    width: 120px;
+    height: 35px;
+    font-family: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 3px;
+    &:hover {
+      border: 2px solid $color-primary;
+      background-color: $color-black-1;
+    }
+  }
+}
+
+//Login
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__field {
+    min-width: 280px;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  &__input {
+    font-size: inherit;
+    padding: 3px;
+    margin: 3px 0;
+  }
+}
+
+// Add Todo
+
+.form-add-todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__field {
+    min-width: 280px;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+  }
+  &__input {
+    font-size: inherit;
+    padding: 3px;
+    margin: 3px 0;
+  }
+}
+
+// To do List
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+}
+
+// To do
+
+.todo {
+  display: flex;
+  min-width: 800px;
+  margin: 10px 0;
+
+  &__task,
+  &__input {
+    min-width: 55%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 8px;
+    font-size: inherit;
+    height: 35px;
+  }
+
+  &__task--complete {
+    background-color: $color-success;
+    color: $color-white-1;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: space-around;
+    min-width: 45%;
+  }
+}
+
+// Media queries
+
+@media (max-width: 780px) {
+  .todo {
+    min-width: 100%;
+    flex-direction: column;
+
+    &__task {
+      justify-content: center;
+    }
+    &__task,
+    &__input {
+      margin-bottom: 10px;
+    }
+  }
+}

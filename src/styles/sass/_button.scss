@@ -1,0 +1,35 @@
+.btn {
+  background-color: $color-primary;
+  border: 0;
+  color: #fdfdfd;
+  width: 120px;
+  height: 35px;
+  font-family: inherit;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.3s;
+
+  &:disabled {
+    background-color: $color-disabled;
+    color: $color-black-1;
+  }
+
+  &--font-inherit {
+    font-size: inherit;
+  }
+
+  &--confirm {
+    background-color: $color-success;
+    width: 100px;
+  }
+  &--cancel {
+    background-color: $color-error;
+    width: 100px;
+  }
+  &--edit {
+    background-color: $color-edit;
+    width: 100px;
+  }
+}

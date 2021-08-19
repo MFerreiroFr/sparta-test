@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 30px;
+}
+.header__logout {
+  background-color: #3228f0;
+  border: 0;
+  color: #fdfdfd;
+  width: 120px;
+  height: 35px;
+  font-family: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.header__logout:hover {
+  border: 2px solid #3228f0;
+  background-color: #000;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-form__field {
+  min-width: 280px;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+}
+.login-form__input {
+  font-size: inherit;
+  padding: 3px;
+  margin: 3px 0;
+}
+
+.form-add-todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-add-todo__field {
+  min-width: 280px;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+}
+.form-add-todo__input {
+  font-size: inherit;
+  padding: 3px;
+  margin: 3px 0;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.todo {
+  display: flex;
+  min-width: 800px;
+  margin: 10px 0;
+}
+.todo__task, .todo__input {
+  min-width: 55%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 8px;
+  font-size: inherit;
+  height: 35px;
+}
+.todo__task--complete {
+  background-color: #2ecc71;
+  color: #fdfdfd;
+}
+.todo__actions {
+  display: flex;
+  justify-content: space-around;
+  min-width: 45%;
+}
+
+@media (max-width: 780px) {
+  .todo {
+    min-width: 100%;
+    flex-direction: column;
+  }
+  .todo__task {
+    justify-content: center;
+  }
+  .todo__task, .todo__input {
+    margin-bottom: 10px;
+  }
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.btn {
+  background-color: #3228f0;
+  border: 0;
+  color: #fdfdfd;
+  width: 120px;
+  height: 35px;
+  font-family: inherit;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+.btn:disabled {
+  background-color: #e6e6e6;
+  color: #000;
+}
+.btn--font-inherit {
+  font-size: inherit;
+}
+.btn--confirm {
+  background-color: #2ecc71;
+  width: 100px;
+}
+.btn--cancel {
+  background-color: #e74c3c;
+  width: 100px;
+}
+.btn--edit {
+  background-color: #f1c40f;
+  width: 100px;
+}
+
+/*# sourceMappingURL=index.css.map */
